@@ -1,0 +1,8 @@
+extends layout
+
+block content
+  h1 #{title}
+  div.loginbox
+    form(name="login", action="/login", method="post")
+      input(type="email", name="email")
+      input(type="submit", value="login")
